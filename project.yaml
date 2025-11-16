@@ -1,8 +1,9 @@
 version: '4.0'
 
 actions:
-  generate_dataset:
-    run: ehrql:v1 generate-dataset analysis/dataset_definition.py --output output/dataset.csv.gz
+  measures_primary:
+    run: ehrql:v1 generate-measures analysis/measure_def.py 
+      --output output/measures/measures_overall.csv
     outputs:
-      highly_sensitive:
-        dataset: output/dataset.csv.gz
+      moderately_sensitive:
+        measure_csv: output/measures/measures_overall.csv

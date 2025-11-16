@@ -1,3 +1,94 @@
 {
-  "files": {}
+  "files": {
+    "opensafely-ethnicity-snomed-0removed.csv": {
+      "id": "opensafely/ethnicity-snomed-0removed/22911876",
+      "url": "https://www.opencodelists.org/codelist/opensafely/ethnicity-snomed-0removed/22911876/",
+      "downloaded_at": "2025-11-16 10:53:21.553206Z",
+      "sha": "d95a2f826299563aa57f6fa99009e6e13a65151b"
+    },
+    "user-candrews-atorvastatin-20-drug-codes.csv": {
+      "id": "user/candrews/atorvastatin-20-drug-codes/6042c915",
+      "url": "https://www.opencodelists.org/codelist/user/candrews/atorvastatin-20-drug-codes/6042c915/",
+      "downloaded_at": "2025-11-16 10:53:21.639728Z",
+      "sha": "a7f2d0615f7262b854c93c56132c3c8437569fd7"
+    },
+    "user-candrews-qrisk-observable-entities.csv": {
+      "id": "user/candrews/qrisk-observable-entities/1643314b",
+      "url": "https://www.opencodelists.org/codelist/user/candrews/qrisk-observable-entities/1643314b/",
+      "downloaded_at": "2025-11-16 14:56:34.162671Z",
+      "sha": "39e571b104a4ae21982cc4ac76c1f3933457a531"
+    },
+    "nhsd-primary-care-domain-refsets-chd_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/chd_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/chd_cod/20250912/",
+      "downloaded_at": "2025-11-16 15:55:44.070243Z",
+      "sha": "b79cfc6a5928d04c790f708908368e488e900efd"
+    },
+    "nhsd-primary-care-domain-refsets-tia_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/tia_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/tia_cod/20250912/",
+      "downloaded_at": "2025-11-16 18:35:03.071174Z",
+      "sha": "582c570c9e3f0229587e15ae38a343042efce060"
+    },
+    "nhsd-primary-care-domain-refsets-strk_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/strk_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/strk_cod/20250912/",
+      "downloaded_at": "2025-11-16 18:35:03.160920Z",
+      "sha": "14a9a227bebbe509459f1bbedd9ceb903a50d4d7"
+    },
+    "nhsd-primary-care-domain-refsets-pad_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/pad_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/pad_cod/20250912/",
+      "downloaded_at": "2025-11-16 18:35:03.236316Z",
+      "sha": "f3a33d8792fcd458f728b4dbaed103e5cead9a0c"
+    },
+    "nhsd-primary-care-domain-refsets-dmtype1_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/dmtype1_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/dmtype1_cod/20250912/",
+      "downloaded_at": "2025-11-16 18:35:03.327866Z",
+      "sha": "658987e223c4d523959971d390f18eacc8a49b51"
+    },
+    "nhsd-primary-care-domain-refsets-ckd1and2_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/ckd1and2_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/ckd1and2_cod/20250912/",
+      "downloaded_at": "2025-11-16 18:35:03.395292Z",
+      "sha": "24d9026bc73287f24b3fb09a23c69f4ce8238c06"
+    },
+    "nhsd-primary-care-domain-refsets-ckd_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/ckd_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/ckd_cod/20250912/",
+      "downloaded_at": "2025-11-16 18:35:03.472862Z",
+      "sha": "2e2e33d85817844bb8922fc6c87583c898f61ec5"
+    },
+    "nhsd-primary-care-domain-refsets-ckdres_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/ckdres_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/ckdres_cod/20250912/",
+      "downloaded_at": "2025-11-16 18:35:03.538419Z",
+      "sha": "906aa0513f26af3e97e0563362a84636d21f6d5a"
+    },
+    "nhsd-primary-care-domain-refsets-possfh_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/possfh_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/possfh_cod/20250912/",
+      "downloaded_at": "2025-11-16 18:35:03.603581Z",
+      "sha": "fd42b6def475806f76cb01f9efbd7356ce29baee"
+    },
+    "nhsd-primary-care-domain-refsets-classfh_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/classfh_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/classfh_cod/20250912/",
+      "downloaded_at": "2025-11-16 18:35:03.675591Z",
+      "sha": "622a5f496261e457c345884cf8c269db143fdd92"
+    },
+    "nhsd-primary-care-domain-refsets-famhypgen_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/famhypgen_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/famhypgen_cod/20250912/",
+      "downloaded_at": "2025-11-16 18:35:03.744665Z",
+      "sha": "e8d3213cfd8a7b1eb2e30bebd3cb38fa17c6d1e5"
+    },
+    "nhsd-primary-care-domain-refsets-famhypref_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/famhypref_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/famhypref_cod/20250912/",
+      "downloaded_at": "2025-11-16 19:15:51.376941Z",
+      "sha": "d259eca0b475beffd09179a8a6fcb6ed67bef1aa"
+    }
+  }
 }
