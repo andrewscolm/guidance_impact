@@ -106,6 +106,25 @@ famhypref_cod = codelist_from_csv(
   column="code"
 )
 
+statindec_cod = codelist_from_csv(
+  "codelists/nhsd-primary-care-domain-refsets-statindec_cod.csv",
+  column="code"
+)
+
+statintol_cod = codelist_from_csv(
+  "codelists/nhsd-primary-care-domain-refsets-statintol_cod.csv",
+  column="code"
+)
+
+txstat_cod = codelist_from_csv(
+  "codelists/nhsd-primary-care-domain-refsets-txstat_cod.csv",
+  column="code"
+)
+
+xstat_cod = codelist_from_csv(
+  "codelists/nhsd-primary-care-domain-refsets-xstat_cod.csv",
+  column="code"
+)
 
 ##########
 #Numerator: patients with a prescription of atorvastatin 20mg
@@ -146,10 +165,10 @@ has_possible_age= (patients.age_on(INTERVAL.start_date) < 85) & (patients.age_on
 non_disclosive_sex= (patients.sex == "male") | (patients.sex == "female")
 
 ### Exclude practices with fewer than 750 patients
-## TODO, downstream? create measure with registered patients as denominator?
+## downstream
 
 ### Exclude practices with no QRISK coding
-## TODO, downstream? create measure with registered patients with qrisk code as denominator?
+## downstream
 
 ### Exclude practices which opened or closed during the study period 
 ## downstream
@@ -257,6 +276,31 @@ famhypref = (
 
 famhyp_reg = (famhypgen | classfh | possfh | famhypref)
 
+### statin is declined or clinically unsuitable, 
+# •	Patient has a statin intolerance code recorded anywhere up to and including the achievement date, OR
+# •	Patient has chosen not to receive a statin in the 12 months leading up to and including the payment period end date, OR
+# •	Patient has a persisting statin contraindication anywhere up to and including the achievement date, OR
+# •	Patient has an expiring statin contraindication recorded in the 12 months leading up to and including the payment period end date.
+
+statintol = medications.where(
+                medications.dmd_code.is_in(statintol_cod)
+                & medications.date.is_before(INTERVAL.start_date)).exists_for_patient()
+
+statindec = medications.where(
+                medications.dmd_code.is_in(statindec_cod)
+                & medications.date.is_on_or_between(INTERVAL.start_date - months(12),INTERVAL.start_date)).exists_for_patient()
+
+xstat = medications.where(
+                medications.dmd_code.is_in(xstat_cod)
+                & medications.date.is_before(INTERVAL.start_date)).exists_for_patient()
+
+txstat = medications.where(
+                medications.dmd_code.is_in(txstat_cod)
+                & medications.date.is_on_or_between(INTERVAL.start_date - months(12),INTERVAL.start_date)).exists_for_patient()
+
+statdec_or_intol_reg = (statintol | statindec | xstat | txstat)
+
+
 # # define denominator
 primary_denominator = ( is_registered
                         & ~chd_reg 
@@ -264,7 +308,8 @@ primary_denominator = ( is_registered
                         & ~pad_reg 
                         & ~dmtype1_reg 
                         & ~ckd_reg 
-                        & ~famhyp_reg  )
+                        & ~famhyp_reg
+                        & ~statdec_or_intol_reg)
 
 
 # #Specify intervals

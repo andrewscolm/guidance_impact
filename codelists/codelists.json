@@ -89,6 +89,30 @@
       "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/famhypref_cod/20250912/",
       "downloaded_at": "2025-11-16 19:15:51.376941Z",
       "sha": "d259eca0b475beffd09179a8a6fcb6ed67bef1aa"
+    },
+    "nhsd-primary-care-domain-refsets-statintol_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/statintol_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/statintol_cod/20250912/",
+      "downloaded_at": "2025-11-16 23:28:16.053651Z",
+      "sha": "760282538ad0616bb3dcaf1f3c70d33a1cda03cd"
+    },
+    "nhsd-primary-care-domain-refsets-xstat_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/xstat_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/xstat_cod/20250912/",
+      "downloaded_at": "2025-11-16 23:28:16.117881Z",
+      "sha": "d3a2475241d31bf55a9e2eb3f3c418fde85f0f19"
+    },
+    "nhsd-primary-care-domain-refsets-txstat_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/txstat_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/txstat_cod/20250912/",
+      "downloaded_at": "2025-11-16 23:28:16.176126Z",
+      "sha": "bbc7c59c9dec739101835baf76f31cdb85e05ed8"
+    },
+    "nhsd-primary-care-domain-refsets-statindec_cod.csv": {
+      "id": "nhsd-primary-care-domain-refsets/statindec_cod/20250912",
+      "url": "https://www.opencodelists.org/codelist/nhsd-primary-care-domain-refsets/statindec_cod/20250912/",
+      "downloaded_at": "2025-11-16 23:28:16.229279Z",
+      "sha": "26e0f233fa3bebd30f5c8d06667bf03720d31d57"
     }
   }
 }
